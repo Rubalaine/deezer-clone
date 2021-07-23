@@ -47,12 +47,13 @@ const App = () => {
           tabBarOptions={{
             activeTintColor: "#000",
             inactiveTintColor: "#72727d",
+            keyboardHidesTabBar: true,
             style: {
               height: 60,
               paddingVertical: 10,
             },
             labelStyle: {
-              fontSize: 16,
+              fontSize: 14,
               fontFamily: "Poppins_400Regular",
             },
           }}

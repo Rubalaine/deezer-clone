@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import { TouchableOpacity } from "react-native";
 
 const Header = ({ name }) => {
   return (
     <Head>
       <Title>{name}</Title>
       <Icons>
-        <Ionicons name="ios-notifications-outline" size={24} color="#72727d" />
-        <Ionicons name="ios-settings-outline" size={24} color="#72727d" />
+        <TouchableOpacity>
+          <Ionicons
+            name="ios-notifications-outline"
+            size={24}
+            color="#72727d"
+          />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Ionicons name="ios-settings-outline" size={24} color="#72727d" />
+        </TouchableOpacity>
       </Icons>
     </Head>
   );
